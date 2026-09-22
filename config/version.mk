@@ -43,3 +43,10 @@ PRODUCT_PRODUCT_PROPERTIES += \
     ro.lineage.display.version=$(LINEAGE_DISPLAY_VERSION) \
     ro.lineage.build.version=$(PRODUCT_VERSION_MAJOR).$(PRODUCT_VERSION_MINOR) \
     ro.lineage.releasetype=$(LINEAGE_BUILDTYPE)
+
+# CubeOS version properties
+CUBEOS_VERSION := $(LINEAGE_VERSION)
+
+PRODUCT_PRODUCT_PROPERTIES += \
+    ro.cubeos.version=$(CUBEOS_VERSION) \
+    ro.cubeos.base=LineageOS-$(PRODUCT_VERSION_MAJOR).$(PRODUCT_VERSION_MINOR)
